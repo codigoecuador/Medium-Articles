@@ -131,28 +131,3 @@ if __name__ == '__main__':
     
     #set the dataframe's row index to the company name
     df = df.set_index('companyName')
-    
-    '''    
-    date = datetime.date(year, month, day=28)
-    date = date.strftime(format='%Y-%m-%d')    
-    
-    api_params = {'date': '2020-02-3'}
-    hdrs =  {'Accept': 'application/json, text/plain, */*',
-                 'DNT': "1",
-                 'Origin': 'https://www.nasdaq.com/',
-                 'Sec-Fetch-Mode': 'cors',
-                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0)'}
-    
-    urls = 'https://api.nasdaq.com/api/calendar/dividends'
-    page = requests.get(urls, headers=hdrs, params=api_params)
-    dictionary = page.json()
-    
-    rows = dictionary.get('data').get('calendar').get('rows')
-    rows 
-    
-    cal = pandas.DataFrame(rows)
-    cal
-
-    df = cal.dropna(how='any')    
-    df = df.set_index('companyName')
-    '''
