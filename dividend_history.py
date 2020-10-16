@@ -23,7 +23,6 @@ class dividend_history:
                 "accept-encoding": "gzip, deflate, br",
                 "accept-language": "en-US,en;q=0.9",
                 "cache-control": "no-cache",
-                "cookie": "cookies",
                 "dnt": "1",
                 "pragma": "no-cache",
                 "sec-fetch-mode": "navigate",
